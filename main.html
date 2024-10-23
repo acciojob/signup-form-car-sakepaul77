@@ -11,27 +11,47 @@
 	<h1>Signup For Car<h2>
 		<form action=/submit-feedback method="post">
 			<lable for="Name">Name</lable>
-			<input type="Text" id="name" placeholder="Name" required>
+			<input type="Text" required id="name" placeholder="Name" >
 			<br>
 
 			<lable for="email">Email</lable>
-			<input type="Email" id="email" placeholder="Email" required>
+			<input type="Email" required id="email" placeholder="Email">
 			<br>
 
-			<lable for ="Gender">Gender</lable>
-			<input type = "Radio" id="gender_m, gender_f" required>
+			<lable for ="gender_m">Gender
+			<input type = "Radio" name="gender" required id="gender_m" >
+			</lable>
+<br>
+				<lable for =" gender_f">Gender
+			<input type = "Radio" name="gender" required id="gender_f" >
+			</lable>
 			<br>
+			
 			<lable for="Car Brands">Car Brands</lable>
-			<input type="Select" id="cars" placeholder="--Please choose an option--" required></input>
+		<select id="cars" name="cars" required>
+			<option valur="" disabled selected>--Please choose an option--</option>
+			<option value ="BMW">BMW</option>
+			<option value="Honda">Honda</option>
+			<option value="Tata">Tata</option>
+		</select>
 			<br>
 
 			<lable for="Age">Age</lable>
-			<input type="Number" id="age" placeholder="Age" required>
+			<input type="Number" required id="age" placeholder="Age" >
 			<br>
 
 			<lable for="phone number">Phone Number</lable>
-			<input type="Tel" id="tel" placeholder="	xxx-xxx-xxxx">
+			<input type="Tel" id="tel" placeholder="xxx-xxx-xxxx">
 			<br>
+
+			<lable for="password">Password</lable>
+			<input type="password" required id="password" placeholder="password">
+			<br>
+
+			<lable for="I agree to the TOS">I agree to the TOS</lable>
+			<input type="I agree to the TOS" id="tos" placeholder="password">
+			<br>
+			<button>submit</button>
 
 			
 
